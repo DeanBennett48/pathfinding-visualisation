@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="js.js"></script>
+    </head>
+    <body>
+        <!--menu items-->
+        <div id="controls">
+            <h1>Pathfinding Visualisation</h1>
+            <select name="algorithm" id="algorithm">
+                <option value="Dijkstra">Dijkstra</option>
+                <option value="A*">A*</option>
+                <option value="algorithm 3">algorithm 3</option>
+            </select>
+            <button onclick="findPath()">Find path</button><br>
+            <button onclick="maze()">Generate Maze</button><br>
+            <button onclick="reset()">Reset Board</button><br>
+        </div>
+        <div id="key">
+            <h2>Key</h2>
+            <ul>
+                <li class="key-item"><div class="key-cell" style="background-Color:green;"></div>Start</li>
+                <li class="key-item"><div class="key-cell" style="background-Color:red;"></div>End</li>
+                <li class="key-item"><div class="key-cell" style="background-Color:purple;"></div>Path</li>
+                <li class="key-item"><div class="key-cell" style="background-Color:yellow;"></div>Considered</li>
+                <li class="key-item"><div class="key-cell" style="background-Color:black;"></div>Wall</li>
+            </ul>
+        </div>
+        <div id="main">
+            <table id="grid">
+                
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+* {
+    margin:0;
+    padding:0;
+}
+#controls {
+    text-align:center;
+}
+
+#key {
+    text-align:center;
+    margin:10px;
+}
+
+#key ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width:600px;
+    margin:0 auto;
+}
+
+.key-item {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    margin:5px;
+}
+
+.key-cell {
+    width:20px;
+    height:20px;
+    border:1px solid black;
+}
+
+#grid {
+    width:650px;
+    border-spacing:0;
+    border-collapse: collapse;
+    margin:0 auto;
+}
+
+#grid tr {
+    width:650px;
+    height:20px;
+    margin:0 0px;
+    padding:0;
+    overflow: hidden;
+}
+
+table tr td {
+    border:1px solid black;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    white-space: nowrap;
+    user-select: none;
+    height:20px;
+    width:20px;
+    text-align: center;
+}
+
+.cell {
+    background-color:#EEE;
+}
+
+.wall {
+    background-color:black;
+    border:1px solid black;
+}
+
+#target {
+    height:18px;
+    width:20px;
+    margin:0;
+    padding:0;
+}
+
+.target {
+    background-color:red;
+    background-position: center;
+    background-size:cover;
+
+}
+
+.start {
+    background-color:green;
+}
+
+.visited {
+    background-color:yellow;
+    transition-duration: 0.5s;
+}
+
+.path {
+    background-color:purple;
+}
+
+.mazeConsidered {
+    background-color:orange;
+}
+
+.mazeConfirmed {
+    background-color:orangered;
+}
+button {
+    padding:5px;
+    margin:10px;
+}
